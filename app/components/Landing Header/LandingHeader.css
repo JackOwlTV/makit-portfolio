@@ -1,0 +1,85 @@
+.landing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18.85281rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.title-project {
+    width: 62.75rem;
+    height: 22.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-maj {
+
+    color: rgb(207, 22, 207);
+    text-align: center;
+    font-family: Kelson;
+    font-size: 15.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+}
+
+.title-curs {
+    color: #212121;
+    text-align: center;
+    font-family: Kaushan Script;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.light-mode {
+    cursor: pointer;
+    font-size: 28px;
+    color: #212121;
+    position: fixed;
+    bottom: 95%;
+}
+
+.dark {
+    cursor: pointer;
+    font-size: 28px;
+    color: #f2f2f2;
+    position: fixed;
+    bottom: 95%;
+}
+
+.dk-mode {
+    background-color: #212121;
+}
+
+.dark-maj {
+    color: #f2f2f2;
+    text-align: center;
+    font-family: Kelson;
+    font-size: 15.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+}
+
+.dark-curs {
+    color: rgb(207, 22, 207);
+    text-align: center;
+    font-family: Kaushan Script;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
