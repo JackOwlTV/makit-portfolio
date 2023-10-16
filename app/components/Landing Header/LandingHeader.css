@@ -1,4 +1,18 @@
 .landing-header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18.85281rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s all ease-in-out;
+}
+
+.dk-mode {
+    background-color: #212121;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +33,22 @@
     justify-content: center;
 }
 
-.title-maj {
 
-    color: rgb(207, 22, 207);
+.title-maj {
+    color: #AD00FF;
+    text-align: center;
+    font-family: Kelson;
+    font-size: 15.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    transition: 0.6s all ease-in-out;
+
+}
+
+.dark-maj {
+    color: #f2f2f2;
     text-align: center;
     font-family: Kelson;
     font-size: 15.875rem;
@@ -40,41 +67,12 @@
     font-weight: 400;
     line-height: normal;
     position: absolute;
-}
+    transition: 0.6s all ease-in-out;
 
-.light-mode {
-    cursor: pointer;
-    font-size: 28px;
-    color: #212121;
-    position: fixed;
-    bottom: 95%;
-}
-
-.dark {
-    cursor: pointer;
-    font-size: 28px;
-    color: #f2f2f2;
-    position: fixed;
-    bottom: 95%;
-}
-
-.dk-mode {
-    background-color: #212121;
-}
-
-.dark-maj {
-    color: #f2f2f2;
-    text-align: center;
-    font-family: Kelson;
-    font-size: 15.875rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    position: absolute;
 }
 
 .dark-curs {
-    color: rgb(207, 22, 207);
+    color: #AD00FF;
     text-align: center;
     font-family: Kaushan Script;
     font-size: 8rem;
@@ -82,4 +80,21 @@
     font-weight: 400;
     line-height: normal;
     position: absolute;
+}
+
+.light-mode,
+.dark {
+    cursor: pointer;
+    font-size: 28px;
+    position: fixed;
+    bottom: 95%;
+    transition: color 0.6s;
+}
+
+.light-mode {
+    color: #212121;
+}
+
+.dark {
+    color: #f2f2f2;
 }
