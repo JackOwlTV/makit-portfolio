@@ -1,0 +1,63 @@
+.englishmode {
+    width: 25px;
+    height: 25px;
+    left: 1185px;
+    top: -12.5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.rectangle5 {
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+    border: 1px solid #212121;
+    transition: 0.5s ease-in-out;
+}
+
+.en {
+    left: 5px;
+    top: 2px;
+    position: absolute;
+    text-align: center;
+    color: #212121;
+    font-size: 14px;
+    font-family: 'Kelson';
+    font-weight: 400;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+.fr {
+
+    left: 7.5px;
+    top: 2px;
+    position: absolute;
+    text-align: center;
+    color: #212121;
+    font-size: 14px;
+    font-family: 'Kelson';
+    font-weight: 400;
+    word-wrap: break-word;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+
+}
+
+.englishmode:hover .rectangle5 {
+    background: #212121;
+}
+
+.englishmode:hover .fr {
+    opacity: 0;
+}
+
+.englishmode:hover .en {
+    opacity: 1;
+    color: white;
+}
