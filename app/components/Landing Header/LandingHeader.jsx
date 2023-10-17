@@ -10,7 +10,7 @@ const LandingHeader = () => {
         setDarkMode(!isDarkMode);
     }
 
-    const headerClass = `landing-header ${isDarkMode ? 'dk-mode' : ''}`;
+    const headerClass = `${isDarkMode ? 'dk-mode' : 'landing-header'}`;
     const emojiClass = `emoji ${isDarkMode ? 'dark' : 'light-mode'}`;
     const titleMajClass = `${isDarkMode ? 'dark-maj' : 'title-maj'}`;
     const titleCursClass = `${isDarkMode ? 'dark-curs' : 'title-curs'}`;
