@@ -5,10 +5,27 @@
     justify-content: center;
     margin: auto;
     border: 1px solid #212121;
+    background-color: transparent;
+    width: 83.75rem;
+    height: 58rem;
+    position: relative;
+    transition: 0.6s all ease-in-out;
+}
+
+.pg-projects-dk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid #AD00FF;
+    background-color: transparent;
     width: 83.75rem;
     height: 58rem;
     position: relative;
 }
+
+
 
 .gp-title {
     width: 284px;
@@ -27,6 +44,15 @@
     position: absolute;
     background: white;
     border: 1px solid #212121;
+    transition: 0.6s all ease-in-out;
+}
+
+.rect-dk {
+
+    background: #212121;
+    border: 1px solid #AD00FF;
+    color: white;
+
 }
 
 
@@ -40,6 +66,11 @@
     font-family: 'Kelson';
     font-weight: 800;
     word-wrap: break-word;
+    transition: 0.6s all ease-in-out;
+}
+
+.maj-dk {
+    color: white;
 }
 
 
@@ -55,4 +86,9 @@
     font-family: 'Kaushan Script';
     font-weight: 400;
     word-wrap: break-word;
+    transition: 0.6s all ease-in-out;
+}
+
+.curs-dk {
+    color: #AD00FF;
 }

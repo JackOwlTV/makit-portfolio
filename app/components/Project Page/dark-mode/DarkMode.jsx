@@ -2,11 +2,11 @@
 import React from 'react'
 import { MdEmojiObjects } from "react-icons/md";
 
-function DarkMode() {
+function DarkMode(props) {
     return (
         <div className="darkmode">
-            <div className="rectangle-dk" />
-            <div className='icon'><MdEmojiObjects /></div>
+            <div className={props.rectClass} />
+            <div className={props.icon}><MdEmojiObjects /></div>
         </div>)
 }
 

@@ -18,6 +18,13 @@
     transition: 0.5s ease-in-out;
 }
 
+.rect-dk {
+
+    background: #212121;
+    border: 1px solid #AD00FF;
+
+}
+
 .en {
     left: 5px;
     top: 2px;
@@ -31,6 +38,10 @@
     opacity: 0;
     transition: 0.5s ease-in-out;
 
+}
+
+.en-dk {
+    color: white;
 }
 
 .fr {
@@ -47,6 +58,10 @@
     opacity: 1;
     transition: 0.5s ease-in-out;
 
+}
+
+.fr-dk {
+    color: white;
 }
 
 .englishmode:hover .rectangle5 {

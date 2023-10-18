@@ -19,6 +19,13 @@
     transition: 0.5s ease-in-out;
 }
 
+.rect-dk {
+
+    background: #212121;
+    border: 1px solid #AD00FF;
+
+}
+
 .icon {
     width: 15.36px;
     height: 15.36px;
@@ -26,6 +33,15 @@
     top: 5px;
     position: absolute;
     transition: 0.5s ease-in-out;
+}
+
+.icon-dk {
+    color: white;
+    width: 15.36px;
+    height: 15.36px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
 }
 
 .darkmode:hover .rectangle-dk {

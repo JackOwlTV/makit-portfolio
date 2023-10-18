@@ -1,6 +1,7 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { Projects } from '../../data/Projects'
+
 
 import ProjectLigne from './Projet Ligne/ProjectLigne'
 import Menu from './menu/menu'
@@ -14,14 +15,28 @@ import './dark-mode/DarkMode.css'
 import './english-mode/EnglishMode.css'
 
 
-const ProjectPage = (props) => {
+
+const ProjectPage = () => {
+
+    const [isDarkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!isDarkMode);
+    }
+
+    const pgProjectsClass = `${isDarkMode ? 'pg-projects-dk' : 'pg-projects'}`;
+    const rectangle2Class = `${isDarkMode ? 'rectangle2 rect-dk' : 'rectangle2'}`;
+    const titleMajClass = `${isDarkMode ? 'lp-title-maj maj-dk' : 'lp-title-maj'}`;
+    const titleCursClass = `${isDarkMode ? 'lp-title-curs curs-dk' : 'lp-title-curs'}`;
+
+
     return (
-        <section className="pg-projects">
+        <section className={pgProjectsClass}>
 
             <div className='gp-title'>
-                <div className='rectangle2' />
-                <div className='lp-title-maj'>MAKE IT</div>
-                <div className='lp-title-curs'>differently</div>
+                <div className={rectangle2Class} />
+                <div className={titleMajClass}>MAKE IT</div>
+                <div className={titleCursClass}>differently</div>
             </div>
 
             <div className="gp-mask ">
@@ -36,10 +51,10 @@ const ProjectPage = (props) => {
                 </div>
 
                 <div className="projects-list">
-                    {Projects.map((project, index) => {
+                    {Projects.map((project, e) => {
                         return (
                             <ProjectLigne
-                                key={index.id}
+                                key={e.id}
                                 name={project.name}
                                 category={project.category}
                             />
@@ -47,9 +62,22 @@ const ProjectPage = (props) => {
                     })}
                 </div>
 
-                <Menu />
-                <DarkMode />
-                <EnglishMode />
+                <Menu
+                    rect={isDarkMode ? 'rectangle4 rect-dk' : 'rectangle4'}
+                    vector={isDarkMode ? 'Vector-dk Vector' : 'Vector'}
+                />
+                <div onClick={toggleDarkMode}>
+                    <DarkMode
+                        rectClass={isDarkMode ? 'rectangle-dk rect-dk' : 'rectangle-dk'}
+                        icon={isDarkMode ? 'icon icon-dk' : 'icon'}
+                    />
+                </div>
+
+                <EnglishMode
+                    rect={isDarkMode ? 'rectangle5 rect-dk' : 'rectangle5'}
+                    en={isDarkMode ? 'en en-dk' : 'en'}
+                    fr={isDarkMode ? 'fr fr-dk' : 'fr'}
+                />
             </section>
         </section>
     )

@@ -4,21 +4,21 @@ import Link from 'next/link'
 
 import './menu.css'
 
-const Menu = () => {
+const Menu = (props) => {
     return (
         <div className="menu">
             <Link href={"#"}>
-                <div className="rectangle4" />
+                <div className={props.rect} />
                 <div className="bentomenu">
-                    <div className="Vector" style={{ left: 0, top: 0 }}></div>
-                    <div className="Vector" style={{ left: 12.75, top: 0 }}></div>
-                    <div className="Vector" style={{ left: 25.50, top: 0 }}></div>
-                    <div className="Vector" style={{ left: 0, top: 25.50 }}></div>
-                    <div className="Vector" style={{ left: 12.75, top: 25.50 }}></div>
-                    <div className="Vector" style={{ left: 25.50, top: 25.50 }}></div>
-                    <div className="Vector" style={{ left: 0, top: 12.75 }}></div>
-                    <div className="Vector" style={{ left: 12.75, top: 12.75 }}></div>
-                    <div className="Vector" style={{ left: 25.50, top: 12.75 }}></div>
+                    <div className={props.vector} style={{ left: 12.75, top: 0 }}></div>
+                    <div className={props.vector} style={{ left: 25.50, top: 0 }}></div>
+                    <div className={props.vector} style={{ left: 0, top: 0 }}></div>
+                    <div className={props.vector} style={{ left: 0, top: 25.50 }}></div>
+                    <div className={props.vector} style={{ left: 12.75, top: 25.50 }}></div>
+                    <div className={props.vector} style={{ left: 25.50, top: 25.50 }}></div>
+                    <div className={props.vector} style={{ left: 0, top: 12.75 }}></div>
+                    <div className={props.vector} style={{ left: 12.75, top: 12.75 }}></div>
+                    <div className={props.vector} style={{ left: 25.50, top: 12.75 }}></div>
                 </div>
                 <div className="bentomenhover">
                     <div className="Vector" style={{ left: 0, top: 0, background: 'white' }}></div>
