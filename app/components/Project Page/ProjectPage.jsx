@@ -2,12 +2,13 @@
 import React, { useState } from 'react'
 import { Projects } from '../../data/Projects'
 
-
+import Cadre from '../Cadre/Cadre'
 import ProjectLigne from './Projet Ligne/ProjectLigne'
 import Menu from './menu/menu'
 import DarkMode from './dark-mode/DarkMode'
 import EnglishMode from './english-mode/EnglishMode'
 
+import '../Cadre/Cadre.css'
 import './ProjectPages.css'
 import './Projet Ligne/ProjectLigne.css'
 import './menu/menu.css'
