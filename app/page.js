@@ -47,11 +47,22 @@ export default function Home() {
   const rectangle2Class = `${isDarkMode ? 'rectangle2 rect-dk' : 'rectangle2'}`;
   const titleMajClass = `${isDarkMode ? 'lp-title-maj maj-dk' : 'lp-title-maj'}`;
   const titleCursClass = `${isDarkMode ? 'lp-title-curs curs-dk' : 'lp-title-curs'}`;
+  const headerClass = `${isDarkMode ? 'dk-mode' : 'landing-header'}`;
+  const emojiClass = `emoji ${isDarkMode ? 'dark' : 'light-mode'}`;
+
+
+
 
   return (
     <main className={mainClass}>
       <section className={isHidden ? 'hidden' : 'header show'}>
-        <LandingHeader />
+        <LandingHeader
+          click={toggleDarkMode}
+          emojiClass={emojiClass}
+          headerClass={headerClass}
+          titleMajClass={isDarkMode ? 'dark-maj' : 'title-maj'}
+          titleCursClass={isDarkMode ? 'dark-curs' : 'title-curs'}
+        />
       </section>
 
       <div className={`container ${isContainerHidden ? 'hidden' : 'show'}`}>
