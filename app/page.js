@@ -14,7 +14,7 @@ import './components/Landing Header/LandingHeader.css'
 
 export default function Home() {
 
-  const scrollThreshold = [0, 10];
+  const scrollThreshold = [0, 50];
 
   const [isHidden, setIsHidden] = useState(false);
   const [isContainerHidden, setIsContainerHidden] = useState(true);
@@ -42,7 +42,7 @@ export default function Home() {
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
   }
-  const mainClass = `${isDarkMode ? 'main-dk flex min-h-screen' : 'flex main min-h-screen'}`;
+  const mainClass = `${isDarkMode ? 'main-dk min-h-screen' : ' main min-h-screen'}`;
   const pgProjectsClass = `${isDarkMode ? 'pg-projects-dk' : 'pg-projects'}`;
   const rectangle2Class = `${isDarkMode ? 'rectangle2 rect-dk' : 'rectangle2'}`;
   const titleMajClass = `${isDarkMode ? 'lp-title-maj maj-dk' : 'lp-title-maj'}`;

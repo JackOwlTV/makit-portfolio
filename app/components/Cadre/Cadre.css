@@ -9,7 +9,7 @@
     width: 83.75rem;
     height: 58rem;
     position: relative;
-    transition: 0.6s all ease-in-out;
+    /* transition: 0.6s all ease-in-out; */
 
 }
 
@@ -57,7 +57,7 @@
     font-family: 'Kelson';
     font-weight: 800;
     word-wrap: break-word;
-    transition: 0.6s all ease-in-out;
+    transition: 0.6s color ease-in-out;
 }
 
 .maj-dk {
@@ -76,7 +76,7 @@
     font-family: 'Kaushan Script';
     font-weight: 400;
     word-wrap: break-word;
-    transition: 0.6s all ease-in-out;
+    transition: 0.6s color ease-in-out;
 }
 
 .curs-dk {

@@ -32,13 +32,19 @@
 
 .hidden {
   opacity: 0;
-  transition: 2s all;
+  transition: opacity 0.1s ease-in-out;
+  /* animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s; */
+
 }
 
 .show {
   opacity: 1;
-  transition: 1s all;
+  transition: opacity 1s ease-in-out;
 }
+
+
 
 .header {
   height: 100vh;
