@@ -1,5 +1,7 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+import 'animate.css';
 
 import Image from "next/image"
 import LandingHeader from "./components/Landing Header/LandingHeader"
@@ -14,28 +16,55 @@ import './components/Landing Header/LandingHeader.css'
 
 export default function Home() {
 
-  const scrollThreshold = [0, 50];
 
-  const [isHidden, setIsHidden] = useState(false);
-  const [isContainerHidden, setIsContainerHidden] = useState(true);
+  const containerConfigs = [
+    {
+      ref: useRef(),
+      threshold: 5, // Seuil de défilement pour le premier conteneur
+    },
 
-  function checkScroll() {
-    const scrollY = window.scrollY;
-    if (scrollY > scrollThreshold[0]) {
-      setIsHidden(true);
-      setIsContainerHidden(false);
-    } else if (scrollY <= scrollThreshold[0] && isHidden) {
-      setIsHidden(false);
-      setIsContainerHidden(true);
-    }
-  }
+    {
+      ref: useRef(),
+      threshold: 30, // Seuil de défilement pour le premier conteneur
+    },
+    // Ajoutez autant d'objets de configuration que nécessaire
+  ];
 
   useEffect(() => {
-    window.addEventListener('scroll', checkScroll);
-    return () => {
-      window.removeEventListener('scroll', checkScroll);
+    const checkScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > containerConfigs[0].threshold) {
+        // Le seuil pour le premier conteneur est atteint
+        containerConfigs[0].ref.current.classList.add('hidden');
+        containerConfigs[0].ref.current.classList.remove('show');
+      } else {
+        containerConfigs[0].ref.current.classList.add('show');
+        containerConfigs[0].ref.current.classList.remove('hidden');
+      }
+
+      if (scrollY > containerConfigs[1].threshold) {
+        // Le seuil pour le second conteneur est atteint
+        containerConfigs[1].ref.current.classList.add('show');
+        containerConfigs[1].ref.current.classList.remove('hidden');
+      } else {
+        containerConfigs[1].ref.current.classList.add('hidden');
+        containerConfigs[1].ref.current.classList.remove('show');
+      }
     };
-  }, [isHidden]);
+
+    const scrollToProjectPage = () => {
+      checkScroll();
+      scroll.scrollTo(containerConfigs[1].ref.current.offsetTop, {
+        duration: 500, // Durée de l'animation du scroll en millisecondes
+      });
+    };
+
+    window.addEventListener('scroll', () => {
+      scrollToProjectPage();
+      checkScroll();
+    });
+  });
 
   const [isDarkMode, setDarkMode] = useState(false);
 
@@ -47,7 +76,7 @@ export default function Home() {
   const rectangle2Class = `${isDarkMode ? 'rectangle2 rect-dk' : 'rectangle2'}`;
   const titleMajClass = `${isDarkMode ? 'lp-title-maj maj-dk' : 'lp-title-maj'}`;
   const titleCursClass = `${isDarkMode ? 'lp-title-curs curs-dk' : 'lp-title-curs'}`;
-  const headerClass = `${isDarkMode ? 'dk-mode' : 'landing-header'}`;
+  const headerClass = `${isDarkMode ? 'dk-mode' : 'landing-header animate__fadeIn'}`;
   const emojiClass = `emoji ${isDarkMode ? 'dark' : 'light-mode'}`;
 
 
@@ -55,7 +84,7 @@ export default function Home() {
 
   return (
     <main className={mainClass}>
-      <section className={isHidden ? 'hidden' : 'header show'}>
+      <section ref={containerConfigs[0].ref} className={'show animate__fadeIn'}>
         <LandingHeader
           click={toggleDarkMode}
           emojiClass={emojiClass}
@@ -65,7 +94,7 @@ export default function Home() {
         />
       </section>
 
-      <div className={`container ${isContainerHidden ? 'hidden' : 'show'}`}>
+      <div ref={containerConfigs[1].ref} className={'hidden animate__fadeIn'}>
         <Cadre cadreClass={pgProjectsClass}
           click={toggleDarkMode}
           rect2Class={rectangle2Class}
