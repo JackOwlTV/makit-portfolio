@@ -12,7 +12,7 @@ import '../Project Page/english-mode/EnglishMode.css'
 
 function Cadre(props) {
     return (
-        <section className={props.cadreClass}>
+        <div className={props.cadreClass}>
 
             <div className='gp-title'>
                 <div className={props.rect2Class} />
@@ -35,7 +35,7 @@ function Cadre(props) {
                 en={props.enClass}
                 fr={props.frClass}
             />
-        </section>
+        </div>
     )
 }
 
