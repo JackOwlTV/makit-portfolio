@@ -61,13 +61,21 @@ section {
 }
 
 
-
-
 .project {
   position: absolute;
   width: 77.8rem;
   height: 47rem;
   top: 4.5rem;
-  left: 6.1rem;
+  /* left: 6.1rem; */
   margin: auto;
+}
+
+.project-dk {
+  position: absolute;
+  width: 77.8rem;
+  height: 47rem;
+  top: 4.5rem;
+  /* left: 6.1rem; */
+  margin: auto;
+  color: #fff;
 }

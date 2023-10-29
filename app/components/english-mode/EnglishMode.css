@@ -5,6 +5,7 @@
     top: -12.5px;
     position: absolute;
     cursor: pointer;
+    z-index: 1;
 }
 
 .rectangle5 {

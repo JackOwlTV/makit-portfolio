@@ -2,12 +2,12 @@
 import React from 'react'
 import './Cadre.css'
 
-import Menu from '../Project Page/menu/menu'
-import DarkMode from '../Project Page/dark-mode/DarkMode'
-import EnglishMode from '../Project Page/english-mode/EnglishMode'
-import '../Project Page/menu/menu.css'
-import '../Project Page/dark-mode/DarkMode.css'
-import '../Project Page/english-mode/EnglishMode.css'
+import Menu from '../menu/Menu'
+import DarkMode from '../dark-mode/DarkMode'
+import EnglishMode from '../english-mode/EnglishMode'
+import '../menu/menu.css'
+import '../dark-mode/DarkMode.css'
+import '../english-mode/EnglishMode.css'
 
 
 function Cadre(props) {

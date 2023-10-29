@@ -5,6 +5,7 @@
     top: -25px;
     position: absolute;
     cursor: pointer;
+    z-index: 1;
 }
 
 

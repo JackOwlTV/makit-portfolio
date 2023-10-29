@@ -98,9 +98,9 @@ export default function Home() {
             enClass={isDarkMode ? 'en en-dk' : 'en'}
             frClass={isDarkMode ? 'fr fr-dk' : 'fr'}
           />
-          {/* <ProjectPage
+          <ProjectPage
             projects={isDarkMode ? 'project-dk' : 'project'}
-          /> */}
+          />
 
         </div>
       </section>
