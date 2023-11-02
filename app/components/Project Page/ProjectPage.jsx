@@ -41,12 +41,12 @@ const ProjectPage = (props) => {
                         {Projects.map((project, e) => (
                             <div
                                 className={props.project}
-                                key={e.id}
+                                key={project.id}
                                 onMouseEnter={() => handleMouseEnter(project)}
                                 onMouseLeave={handleMouseLeave}
                             >
                                 <ProjectLigne
-                                    key={e.id}
+                                    key={project.id}
                                     name={project.name}
                                     category={project.category}
                                 />

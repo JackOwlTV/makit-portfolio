@@ -97,12 +97,15 @@ export default function Home() {
             rect5Class={isDarkMode ? 'rectangle5 rect-dk' : 'rectangle5'}
             enClass={isDarkMode ? 'en en-dk' : 'en'}
             frClass={isDarkMode ? 'fr fr-dk' : 'fr'}
-          />
-          <ProjectPage
             projects={isDarkMode ? 'project-dk' : 'project'}
             project={isDarkMode ? 'lg-project-dk' : 'lg-project'}
             title={isDarkMode ? 'title-dk' : 'title-projects'}
           />
+          {/* <ProjectPage
+            projects={isDarkMode ? 'project-dk' : 'project'}
+            project={isDarkMode ? 'lg-project-dk' : 'lg-project'}
+            title={isDarkMode ? 'title-dk' : 'title-projects'}
+          /> */}
 
         </div>
       </section>
