@@ -101,11 +101,6 @@ export default function Home() {
             project={isDarkMode ? 'lg-project-dk' : 'lg-project'}
             title={isDarkMode ? 'title-dk' : 'title-projects'}
           />
-          {/* <ProjectPage
-            projects={isDarkMode ? 'project-dk' : 'project'}
-            project={isDarkMode ? 'lg-project-dk' : 'lg-project'}
-            title={isDarkMode ? 'title-dk' : 'title-projects'}
-          /> */}
 
         </div>
       </section>
