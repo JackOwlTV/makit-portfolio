@@ -1,0 +1,53 @@
+.darkmode {
+    width: 25px;
+    height: 25px;
+    left: 1168px;
+    top: -12.5px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.rectangle-dk {
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+    border: 1px solid #212121;
+    transition: 0.5s ease-in-out;
+}
+
+.rect-dk {
+
+    background: #212121;
+    border: 1px solid #AD00FF;
+
+}
+
+.icon {
+    width: 15.36px;
+    height: 15.36px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.icon-dk {
+    color: white;
+    width: 15.36px;
+    height: 15.36px;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
+
+.darkmode:hover .rectangle-dk {
+    background: #212121;
+}
+
+.darkmode:hover .icon {
+    color: white;
+}

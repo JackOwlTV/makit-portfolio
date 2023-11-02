@@ -1,0 +1,77 @@
+.projects {
+    position: absolute;
+    left: 63%;
+    width: 35%;
+    /* top: 40%; */
+}
+
+.title-projects {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #222222;
+}
+
+.title-projects h1 {
+    color: #212121;
+    font-family: Kelson;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-projects h1:hover {
+    color: #212121;
+}
+
+.title-projects p {
+    color: #212121;
+    text-align: right;
+    font-family: Kelson;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 333;
+    line-height: normal;
+}
+
+.title-dk {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #fff;
+}
+
+.title-dk h1 {
+    color: #fff;
+    font-family: Kelson;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-dk h1:hover {
+    color: #fff;
+}
+
+.title-dk p {
+    color: #fff;
+    text-align: right;
+    font-family: Kelson;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 333;
+    line-height: normal;
+}
+
+.project-cover {
+    width: 640px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+
+
+.gp-mask {
+    position: relative;
+    margin-top: 16.9%;
+}

@@ -1,0 +1,67 @@
+.menu {
+    width: 50px;
+    height: 50px;
+    left: 1218px;
+    top: -25px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.menu:hover .bentomenu {
+    opacity: 0;
+}
+
+.menu:hover .bentomenhover {
+    opacity: 1;
+}
+
+.rectangle4 {
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: white;
+    border: 1px solid #212121;
+    transition: 0.6s all ease-in-out;
+}
+
+.bentomenu {
+    width: 34px;
+    height: 34px;
+    left: 8px;
+    top: 8px;
+    position: absolute;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.bentomenhover {
+    width: 34px;
+    height: 34px;
+    left: 8px;
+    top: 8px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.Vector {
+    width: 8.50px;
+    height: 8.50px;
+    position: absolute;
+    background: #212121;
+    transition: 0.6s all ease-in-out;
+}
+
+.Vector-dk {
+    background: white;
+
+
+}
