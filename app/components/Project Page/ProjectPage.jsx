@@ -32,7 +32,7 @@ const ProjectPage = (props) => {
                     </div>
                 )}
                 <div className="projects">
-                    <div className="title-projects">
+                    <div className={props.title}>
                         <h1>PROJETS</h1>
                         <p>3</p>
                     </div>
@@ -40,7 +40,7 @@ const ProjectPage = (props) => {
                     <div className="projects-list">
                         {Projects.map((project, e) => (
                             <div
-                                className="lg-project"
+                                className={props.project}
                                 key={e.id}
                                 onMouseEnter={() => handleMouseEnter(project)}
                                 onMouseLeave={handleMouseLeave}

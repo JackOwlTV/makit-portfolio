@@ -34,3 +34,40 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.lg-project-dk {
+    margin-top: 1rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-bottom: solid 1px #fff;
+    /* height: 2rem; */
+}
+
+.lg-project-dk a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lg-project-dk :nth-child(1) {
+    color: #fff;
+    font-family: Kelson;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lg-project-dk a:hover :nth-child(1) {
+    font-weight: 800;
+}
+
+.lg-project-dk :nth-child(2) {
+    color: #fff;
+    text-align: right;
+    font-family: Kelson;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
