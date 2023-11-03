@@ -5,7 +5,7 @@ import PreviousMap from 'postcss/lib/previous-map'
 
 function EnglishMode(props) {
     return (
-        <div className="englishmode">
+        <div className={props.langues}>
             <Link href={"#"}>
                 <div className={props.rect} />
                 <div className={props.en} >en</div>
