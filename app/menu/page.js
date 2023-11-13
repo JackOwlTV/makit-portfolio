@@ -23,13 +23,25 @@ function page() {
     const handleClick = () => {
         router.push('/')
     }
+
+    const projectClick = () => {
+        router.push('/#project')
+    }
+
+    const aboutClick = () => {
+        router.push('/#apropos')
+    }
+
+    const contactClick = () => {
+        router.push('/#contact')
+    }
     return (
 
-        <body className={isDarkMode ? 'dk' : ''}>
+        <div className={isDarkMode ? 'dk div' : 'div'} >
             <div className="navbar">
                 <div className="close" onClick={handleClick}>
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_5_118)">
+                        <g>
                             <path className={isDarkMode ? ' close-dk' : 'vector'} d="M34 25.5V34H25.5L0 8.5V0H8.5L34 25.5Z" />
                             <path className={isDarkMode ? ' close-dk' : 'vector'} d="M8.5 34H0V25.5L25.5 0H34V8.5L8.5 34Z" />
                         </g>
@@ -59,22 +71,22 @@ function page() {
             </div>
             <section className='menu-contenu'>
 
-                <div className="menu-container">
+                <div onClick={projectClick} className="menu-container">
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>PROJECTS</span>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>project</span>
                 </div>
 
-                <div className="menu-container">
+                <div onClick={aboutClick} className="menu-container">
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>À PROPOS</span>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>à propos</span>
                 </div>
 
-                <div className="menu-container">
+                <div onClick={contactClick} className="menu-container">
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>CONTACT</span>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>contact</span>
                 </div>
             </section>
-        </body>
+        </div>
     )
 }
 
