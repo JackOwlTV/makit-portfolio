@@ -78,7 +78,7 @@ export default function Home() {
           /></div>
       </section>
 
-      <section tabIndex={"project"} ref={section2Ref} className={'slider'}>
+      <section id={"project"} ref={section2Ref} className={'slider'}>
         <div className='observe-me hidden'>
           <Cadre cadreClass={pgProjectsClass}
             click={toggleDarkMode}
