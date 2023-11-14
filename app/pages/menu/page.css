@@ -1,0 +1,177 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.div {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    height: 100%;
+}
+
+.div.dk {
+    background-color: #212121;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    padding: 1.56rem;
+}
+
+.navbar :nth-child(1) {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.navbar :nth-child(2) {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.close .vector {
+    fill: #212121;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.close:hover .vector {
+    fill: #AD00FF;
+}
+
+.close-dk {
+    fill: #fff;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.rectangle {
+    background: transparent;
+    transition: 0.5s ease-in-out;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.en-menu {
+    opacity: 0;
+    right: 3px;
+    position: absolute;
+    top: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+.en-dk {
+    color: #fff;
+}
+
+.fr-menu {
+    opacity: 1;
+    right: 6px;
+    position: absolute;
+    top: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+.fr-dk {
+    color: #fff;
+}
+
+.rectangle:hover .en-menu {
+    opacity: 1;
+}
+
+.rectangle:hover .fr-menu {
+    opacity: 0;
+}
+
+.icon-menu {
+    color: #212121;
+    transition: 0.5s ease-in-out;
+}
+
+.icon-menu:hover {
+    color: #444444
+}
+
+.menu-dk {
+    transition: 0.5s ease-in-out;
+
+    color: #fff;
+}
+
+.menu-contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    position: absolute;
+    left: 25vw;
+    top: 0;
+}
+
+.menu-container {
+    position: relative;
+    width: 700px;
+    height: 179px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+.dark.titre-container {
+    color: #fff;
+    transition: 0.5s color ease-in-out;
+}
+
+.titre-container {
+    position: absolute;
+    text-align: center;
+    color: #AD00FF;
+    font-size: 128px;
+    font-family: 'Kelson';
+    font-weight: 800;
+    word-wrap: break-word;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.menu-container:hover .hover-container {
+    opacity: 1;
+}
+
+.menu-container:hover .dark.hover-container {
+    opacity: 1;
+}
+
+.dark.hover-container {
+    color: #AD00FF;
+    transition: 0.5s all ease-in-out;
+}
+
+.hover-container {
+    position: absolute;
+    text-align: center;
+    color: #212121;
+    font-size: 96px;
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 100%;
+    top: 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}

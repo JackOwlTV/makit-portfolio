@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import './Cadre.css'
-
+import { useRouter } from 'next/navigation';
 import Menu from '../menu/Menu'
 import DarkMode from '../dark-mode/DarkMode'
 import EnglishMode from '../english-mode/EnglishMode'
@@ -13,6 +13,15 @@ import '../Project Page/ProjectPages.css'
 
 
 function Cadre(props) {
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/menu')
+    }
+
+
+
     return (
         <div className={props.cadreClass}>
 
@@ -27,18 +36,22 @@ function Cadre(props) {
                 project={props.project}
                 title={props.title}
             />
-            <Menu
-                rect={props.rectmenuClass}
-                vector={props.vectorClass}
-            />
+            <div onClick={handleClick}>
+                <Menu
+                    rect={props.rectmenuClass}
+                    vector={props.vectorClass}
+                />
+            </div>
             <div onClick={props.click}>
                 <DarkMode
+                    dk={props.dkClass}
                     rectClass={props.dkRectClass}
                     icon={props.dkIconClass}
                 />
             </div>
 
             <EnglishMode
+                langues={props.languesClass}
                 rect={props.rect5Class}
                 en={props.enClass}
                 fr={props.frClass}

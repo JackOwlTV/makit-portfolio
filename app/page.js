@@ -2,17 +2,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import 'animate.css';
 
-import Image from "next/image"
-import LandingHeader from "./components/Landing Header/LandingHeader"
-import ProjectPage from "./components/Project Page/ProjectPage"
-import Cadre from "./components/Cadre/Cadre"
+import LandingHeader from "./components/Landing Header/LandingHeader.jsx"
+import Cadre from "./components/Cadre/Cadre.jsx"
 
 
 import './components/Cadre/Cadre.css'
 import './components/Landing Header/LandingHeader.css'
-
-
-
 
 export default function Home() {
 
@@ -83,7 +78,7 @@ export default function Home() {
           /></div>
       </section>
 
-      <section ref={section2Ref} className={'slider'}>
+      <section id={"project"} ref={section2Ref} className={'slider'}>
         <div className='observe-me hidden'>
           <Cadre cadreClass={pgProjectsClass}
             click={toggleDarkMode}
@@ -92,9 +87,11 @@ export default function Home() {
             cursClass={titleCursClass}
             rectmenuClass={isDarkMode ? 'rectangle4 rect-dk' : 'rectangle4'}
             vectorClass={isDarkMode ? 'Vector-dk Vector' : 'Vector'}
+            dkClass='darkmode'
             dkRectClass={isDarkMode ? 'rectangle-dk rect-dk' : 'rectangle-dk'}
             dkIconClass={isDarkMode ? 'icon icon-dk' : 'icon'}
             rect5Class={isDarkMode ? 'rectangle5 rect-dk' : 'rectangle5'}
+            languesClass='englishmode'
             enClass={isDarkMode ? 'en en-dk' : 'en'}
             frClass={isDarkMode ? 'fr fr-dk' : 'fr'}
             projects={isDarkMode ? 'project-dk' : 'project'}

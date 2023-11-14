@@ -4,7 +4,7 @@ import { MdEmojiObjects } from "react-icons/md";
 
 function DarkMode(props) {
     return (
-        <div className="darkmode">
+        <div className={props.dk}>
             <div className={props.rectClass} />
             <div className={props.icon}><MdEmojiObjects /></div>
         </div>)
