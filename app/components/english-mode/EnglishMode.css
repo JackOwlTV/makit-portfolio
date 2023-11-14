@@ -33,8 +33,6 @@
     text-align: center;
     color: #212121;
     font-size: 14px;
-    font-family: 'Kelson';
-    font-weight: 400;
     word-wrap: break-word;
     opacity: 0;
     transition: 0.5s ease-in-out;
@@ -53,8 +51,6 @@
     text-align: center;
     color: #212121;
     font-size: 14px;
-    font-family: 'Kelson';
-    font-weight: 400;
     word-wrap: break-word;
     opacity: 1;
     transition: 0.5s ease-in-out;

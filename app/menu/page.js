@@ -1,10 +1,12 @@
 'use client'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
+import { kelson } from '@/app/fonts/kelson/kelson';
+import { kaushan } from '@/app/fonts/kaushan/kaushan';
 
 
-import DarkMode from '../../components/dark-mode/DarkMode'
-import EnglishMode from '../../components/english-mode/EnglishMode'
+import DarkMode from '../components/dark-mode/DarkMode'
+import EnglishMode from '../components/english-mode/EnglishMode'
 
 import './page.css'
 import '../components/dark-mode/DarkMode.css'
@@ -12,12 +14,14 @@ import '../components/english-mode/EnglishMode.css'
 
 
 function page() {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [isDarkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
         setDarkMode(!isDarkMode);
     }
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
 
     const handleClick = () => {
@@ -72,18 +76,30 @@ function page() {
             <section className='menu-contenu'>
 
                 <div onClick={projectClick} className="menu-container">
+                    <div className={kelson.className}>
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>PROJECTS</span>
+                    </div>
+                    <div className={kaushan.className}>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>project</span>
+                    </div>
                 </div>
 
                 <div onClick={aboutClick} className="menu-container">
+                    <div className={kelson.className}>
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>À PROPOS</span>
+                    </div>
+                    <div className={kaushan.className}>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>à propos</span>
+                    </div>
                 </div>
 
                 <div onClick={contactClick} className="menu-container">
+                    <div className={kelson.className}>
                     <span className={isDarkMode ? 'dark titre-container' : "titre-container"}>CONTACT</span>
+                    </div>
+                    <div className={kaushan.className}>
                     <span className={isDarkMode ? "dark hover-container" : "hover-container"}>contact</span>
+                    </div>
                 </div>
             </section>
         </div>

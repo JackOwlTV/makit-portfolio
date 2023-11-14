@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Projects } from '../../data/Projects'
+import { kelson_regular, kelson_meduim } from '@/app/fonts/kelson/kelson'
 
 import ProjectLigne from './Projet Ligne/ProjectLigne'
 import ImgProject from '../ImgProject/ImgProject'; // Importez le composant ImgProject
@@ -33,8 +34,8 @@ const ProjectPage = (props) => {
                 )}
                 <div className="projects">
                     <div className={props.title}>
-                        <h1>PROJETS</h1>
-                        <p>3</p>
+                        <h1 className={kelson_meduim.className}>PROJETS</h1>
+                        <p className={kelson_regular.className}>3</p>
                     </div>
 
                     <div className="projects-list">

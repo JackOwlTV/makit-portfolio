@@ -56,8 +56,6 @@
     text-align: center;
     color: #AD00FF;
     font-size: 64px;
-    font-family: 'Kelson';
-    font-weight: 800;
     word-wrap: break-word;
     transition: 0.6s color ease-in-out;
 }
@@ -75,8 +73,6 @@
     text-align: center;
     color: #212121;
     font-size: 32px;
-    font-family: 'Kaushan Script';
-    font-weight: 400;
     word-wrap: break-word;
     transition: 0.6s color ease-in-out;
 }

@@ -14,7 +14,6 @@
 
 .lg-project :nth-child(1) {
     color: #212121;
-    font-family: Kelson;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
@@ -28,7 +27,6 @@
 .lg-project :nth-child(2) {
     color: #212121;
     text-align: right;
-    font-family: Kelson;
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
@@ -51,7 +49,6 @@
 
 .lg-project-dk :nth-child(1) {
     color: #fff;
-    font-family: Kelson;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
@@ -59,13 +56,13 @@
 }
 
 .lg-project-dk a:hover :nth-child(1) {
+    
     font-weight: 800;
 }
 
 .lg-project-dk :nth-child(2) {
     color: #fff;
     text-align: right;
-    font-family: Kelson;
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;

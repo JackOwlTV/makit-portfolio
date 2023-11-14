@@ -16,6 +16,7 @@ export default function Home() {
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
   }
+  
   const mainClass = `${isDarkMode ? 'main-dk min-h-screen' : ' main min-h-screen'}`;
   const pgProjectsClass = `${isDarkMode ? 'pg-projects-dk' : ' pg-projects'}`;
   const rectangle2Class = `${isDarkMode ? 'rectangle2 rect-dk' : 'rectangle2'}`;
