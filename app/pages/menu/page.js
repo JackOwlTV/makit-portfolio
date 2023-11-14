@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
 
 
-import DarkMode from '../components/dark-mode/DarkMode'
-import EnglishMode from '../components/english-mode/EnglishMode'
+import DarkMode from '../../components/dark-mode/DarkMode'
+import EnglishMode from '../../components/english-mode/EnglishMode'
 
 import './page.css'
 import '../components/dark-mode/DarkMode.css'
