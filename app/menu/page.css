@@ -114,10 +114,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 90vh;
-    position: absolute;
-    left: 25vw;
-    top: 0;
+    align-items: center;
+    min-height: 80vh;
+    margin: auto;
 }
 
 .menu-container {
