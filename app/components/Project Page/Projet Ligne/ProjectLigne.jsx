@@ -23,13 +23,11 @@ const ProjectLigne = (props) => {
 
   return (
     <Link
-      href={{
-        pathname: "/project/[id].js", // the path to your page
-        query: { id: props.id }, // the id of the project
-      }}
+      href={`project/${props.id}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+
       <span className={isHovered ? kelson.className : kelson_meduim.className}>
         {props.name}
       </span>
