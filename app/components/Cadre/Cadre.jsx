@@ -2,10 +2,16 @@
 import React from 'react'
 import './Cadre.css'
 import { useRouter } from 'next/navigation';
+
+import { kelson } from '@/app/fonts/kelson/kelson';
+import { kaushan } from '@/app/fonts/kaushan/kaushan';
+
 import Menu from '../menu/Menu'
 import DarkMode from '../dark-mode/DarkMode'
 import EnglishMode from '../english-mode/EnglishMode'
 import ProjectPage from '../Project Page/ProjectPage'
+
+
 import '../menu/menu.css'
 import '../dark-mode/DarkMode.css'
 import '../english-mode/EnglishMode.css'
@@ -20,16 +26,19 @@ function Cadre(props) {
         router.push('/menu')
     }
 
-
-
     return (
         <div className={props.cadreClass}>
 
             <div className='gp-title'>
                 <div className={props.rect2Class} />
+                <div className={kelson.className}>
                 <div className={props.majClass}>MAKE IT</div>
+                </div>
+                <div className={kaushan.className}>
                 <div className={props.cursClass}>differently</div>
+                </div>
             </div>
+
 
             <ProjectPage
                 projects={props.projects}

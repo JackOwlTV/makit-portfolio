@@ -11,11 +11,12 @@ body {
     background-color: transparent;
     transition: 0.5s all ease-in-out;
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 .div.dk {
     background-color: #212121;
+    transition: 0.5s color ease-in-out;
 
 }
 
@@ -114,10 +115,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 90vh;
-    position: absolute;
-    left: 25vw;
-    top: 0;
+    align-items: center;
+    min-height: 80vh;
+    margin: auto;
 }
 
 .menu-container {
@@ -141,8 +141,6 @@ body {
     text-align: center;
     color: #AD00FF;
     font-size: 128px;
-    font-family: 'Kelson';
-    font-weight: 800;
     word-wrap: break-word;
     width: 100%;
     left: 0;
@@ -167,11 +165,23 @@ body {
     text-align: center;
     color: #212121;
     font-size: 96px;
-    font-family: 'Kaushan Script';
-    font-weight: 400;
     word-wrap: break-word;
     width: 100%;
     top: 20px;
     opacity: 0;
     transition: 0.5s ease-in-out;
+}
+
+.error {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    word-wrap: break-word;
+    color: #212121;
+}
+
+.dark.error {
+    color: #fff;
+    transition: 0.5s color ease-in-out;
+
 }

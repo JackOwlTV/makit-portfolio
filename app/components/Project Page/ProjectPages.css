@@ -13,10 +13,7 @@
 
 .title-projects h1 {
     color: #212121;
-    font-family: Kelson;
     font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 500;
     line-height: normal;
 }
 
@@ -27,10 +24,7 @@
 .title-projects p {
     color: #212121;
     text-align: right;
-    font-family: Kelson;
     font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 333;
     line-height: normal;
 }
 
