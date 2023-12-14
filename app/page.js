@@ -15,20 +15,16 @@ export default function Home() {
     setDarkMode(!isDarkMode);
   };
 
-  const mainClass = `${
-    isDarkMode ? "main-dk min-h-screen" : " main min-h-screen"
-  }`;
+  const mainClass = `${isDarkMode ? "main-dk min-h-screen" : " main min-h-screen"
+    }`;
   const pgProjectsClass = `${isDarkMode ? "pg-projects-dk" : " pg-projects"}`;
   const rectangle2Class = `${isDarkMode ? "rectangle2 rect-dk" : "rectangle2"}`;
-  const titleMajClass = `${
-    isDarkMode ? "lp-title-maj maj-dk" : "lp-title-maj"
-  }`;
-  const titleCursClass = `${
-    isDarkMode ? "lp-title-curs curs-dk" : "lp-title-curs"
-  }`;
-  const headerClass = `${
-    isDarkMode ? "dk-mode" : " landing-header animate__fadeIn"
-  }`;
+  const titleMajClass = `${isDarkMode ? "lp-title-maj maj-dk" : "lp-title-maj"
+    }`;
+  const titleCursClass = `${isDarkMode ? "lp-title-curs curs-dk" : "lp-title-curs"
+    }`;
+  const headerClass = `${isDarkMode ? "dk-mode" : " landing-header animate__fadeIn"
+    }`;
   const emojiClass = `emoji ${isDarkMode ? "dark" : "light-mode"}`;
 
   const section1Ref = useRef();
